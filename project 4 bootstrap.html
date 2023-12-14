@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 4 BootStrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: rgb(238, 238, 238);
+      }
+      img {
+        height: 250px;
+      }
+      .box {
+        display: block;
+        border-radius: 50%;
+        width: 25vw;
+      }
+      .cardheader {
+        font-weight: 600;
+        font-size: 24px;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .containerContact {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card text-center">
+        <div class="cardheader">אסף שירותי וטרינריה</div>
+        <div class="card-body">
+          <div class="card-title">
+            ברוכים הבאים לאתר המרפאה הדיגיטלי של אסף צואה, הוטרינר החדש שלך החל
+            מהיום
+          </div>
+          <div class="card-text">
+            אצלנו באסף צואה שירותי וטרינריה נקפיד על הטוב ביותר עבור בעל החיים
+            שלך
+          </div>
+          <a href="#" class="btn btn-warning">Go Home</a>
+        </div>
+        <div class="card-footer">This is The End!</div>
+      </div>
+    </div>
+    <section class="container bg-success d-flex justify-content-around">
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="https://source.unsplash.com/random/?dog"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">שירותי כלבים</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="https://source.unsplash.com/random/?cat"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">שירותי חתולים</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="https://source.unsplash.com/random/?bird"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">שירותי ציפורים</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="containerContact">
+        <h2>צרו קשר</h2>
+        <form
+          action="mailto:your_email@example.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="bootstrap.bundle.min.js"></script>
+  </body>
+</html>
